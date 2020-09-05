@@ -16,6 +16,7 @@
 1. **CSS3**.
 1. **JavaScript**.
 ### Code example
+
 ```javascript
 function count (string) {  
   let stringObj = {};
