@@ -1,34 +1,101 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <title>Junior Front-end Developer</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta charset="utf-8">
+
+    <style>
+        body {
+			margin: 0 auto;
+			max-width: 1024px;
+			width: 1024px;
+			font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+	  
+        H1 { 
+			text-align: center;
+            font-size: 120%; 
+            color: #382A3E; 
+        }
+
+        h2 {
+			text-align: center;
+            font-size: 110%;  
+            color: #382A3E;        
+        }
+
+        .contact-container {
+			display: flex;
+			justify-content: flex-start;
+			width: 1024px;
+		}
+
+		.picture { border: 4px double #382A3E; }
+        
+		.contact-info {
+			width: 100%;
+			padding: 30px;
+			padding-left: 50px;
+			background-color: #E9E9E9 ;
+			border: 2px solid #382A3E;
+		}
+
+		.outside-link {
+			color:#644C6E;
+			text-decoration: none;
+		}
+
+		.outside-link:hover { border-bottom: 2px dotted #644C6E; }
+        
+		.footer{
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.code-container {
+			width: 70%;
+			padding-top: 20px;
+			padding-bottom:10px;
+			background-color: #E9E9E9;
+			border: 2px solid #382A3E;
+		}
+
+	</style>
+	
   </head>
+  
+  
   <body>
   <hr>
 	<header>
     <h1><a name="top">Junior Front-end Developer</a></h1>
 	<hr>
-	<h2>Tatsiana Zaiceva</h2>
+	<h2 class="name">Tatsiana Zaiceva</h2>
 	</header>
-	<hr>
-	
-	    <img src="https://cdn1.radikalno.ru/uploads/2020/9/5/84de258f5423054beb1579f0a943e3e3-full.jpg" alt="my photo">
+
 	<main>
-		<section>
-		<h3><a name="contact">Contact</a></h3>
-			<ul>
-			  <li>+375445550976</li>
-			  <li><strong><em>Mail</em></strong>
+		<hr>
+    	<section class="contact-container">
+   			
+			<img class="picture" src="https://cdn1.radikalno.ru/uploads/2020/9/5/84de258f5423054beb1579f0a943e3e3-full.jpg" alt="my photo">
+			
+			<div class="contact-info">
+				<h3 class><a name="contact">Contact</a></h3>
 				<ul>
-				  <li><a href="mailto:pannage@gmail.com">pannage@gmail.com</a></li>
+					<li>+375445550976</li>
+					<li><strong><em>Mail</em></strong>
+						<ul>
+						<li><a class="outside-link" href="mailto:pannage@gmail.com">pannage@gmail.com</a></li>
+						</ul>
+					</li>
+					<li><a class="outside-link" href="https://github.com/pannage">GitHub</a></li>
 				</ul>
-			  </li>
-			  <li><a href="https://github.com/pannage">GitHub</a></li>
-			</ul>
+			</div>
 		</section>
 
 		<section>
-		<h3><a name="skills">Skills</a></h3>
+			<h3><a name="skills">Skills</a></h3>
 			<ol>
 			  <li><strong>Photoshop</strong></li>
 			  <li><strong>HTML5</strong>.</li>
@@ -40,56 +107,59 @@
 
 		<section>
 		<h3><a name="code">Code example</a></h3>
-		<code><pre>
-		function count (string) {  
-		  let stringObj = {};
+			<code>
+				<pre class="code-container">
+					function count (string) {  
+					let stringObj = {};
 
-		  for (let i=0; i < string.length; i++) {
-			if (string[i] in stringObj) {
-			  stringObj[string[i]] = stringObj[string[i]] + 1
-			} else {
-			  stringObj[string[i]] = 1
-			}
-		  }
-		   return stringObj;
-		}
-		</pre></code>
+					for (let i=0; i < string.length; i++) {
+						if (string[i] in stringObj) {
+						stringObj[string[i]] = stringObj[string[i]] + 1
+						} else {
+						stringObj[string[i]] = 1
+						}
+					}
+					return stringObj;
+					}
+				</pre>
+			</code>
 		</section>
 
 		<section>
-		<h3><a name="expirience">Experience</a></h3>
-		<ul>
-		  <li><a href="https://www.codewars.com/users/pannage">codewars</a></li>
-		  <li><a href="https://www.codecademy.com/users/pannage/achievements">codecademy</a>
-		  </li>
-		</ul>
+			<h3><a name="expirience">Experience</a></h3>
+			<ul>
+				<li><a class="outside-link" href="https://www.codewars.com/users/pannage">codewars</a></li>
+				<li><a class="outside-link" href="https://www.codecademy.com/users/pannage/achievements">codecademy</a></li>
+			</ul>
 		</section>
 
 
 		<section>
-		<h3><a name="education">Education:</a></h3>
-		<ul>
-		<li>Minsk state architectural and construction college</li>
-		<li>Minsk Innovation University</li>
-		</ul>
+			<h3><a name="education">Education:</a></h3>
+			<ul>
+				<li>Minsk state architectural and construction college</li>
+				<li>Minsk Innovation University</li>
+			</ul>
 		</section>
 
 		<section>
-		<h3><a name="eng">English level: A2</a></h3>
+			<h3><a name="eng">English level: A2</a></h3>
 		</section>	
 	
 	</main>
 	<hr>
 	<footer>
-	<ul>
-	<li><a href="#top">Top</a></li>
-	<li><a href="#contact">Contact</a></li>
-	<li><a href="#skills">Skills</a></li>
-	<li><a href="#code">Code example</a></li>
-	<li><a href="#expirience">Experience</a></li>
-	<li><a href="#education">Education</a></li>
-	<li><a href="#eng">English level</a></i>
-	</ul>
+		<section>
+			<ul class="footer">
+			<li><a class="outside-link" href="#top">Top</a></li>
+			<li><a class="outside-link" href="#contact">Contact</a></li>
+			<li><a class="outside-link" href="#skills">Skills</a></li>
+			<li><a class="outside-link" href="#code">Code example</a></li>
+			<li><a class="outside-link" href="#expirience">Experience</a></li>
+			<li><a class="outside-link" href="#education">Education</a></li>
+			<li><a class="outside-link" href="#eng">English level</a></i>
+			</ul>
+		</section>
 	</footer>
   </body>
 </html>
