@@ -6,8 +6,6 @@
 
 ***
 
-![N|Solid](https://cdn1.radikalno.ru/uploads/2020/9/5/84de258f5423054beb1579f0a943e3e3-full.jpg)
-
 ### Contact
 
 * +375445550976
